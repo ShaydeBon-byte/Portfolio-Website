@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>KitDesigns - Home</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #1f1f1f;
+      color: #eaeaea;
+    }
+    .navbar, footer {
+      background-color: #2a2a2a !important;
+    }
+    .navbar .nav-link {
+      color: #eaeaea !important;
+    }
+    .navbar .nav-link:hover {
+      color: #ffffff !important;
+    }
+    .site-hero {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .site-hero h1 { font-size: 3.5rem; font-weight: 700; }
+    .site-hero p { font-size: 1.4rem; text-transform: uppercase; letter-spacing: 2px; }
+    .category-section {
+      padding: 80px 0;
+      background-color: #262626;
+    }
+    .category-heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .category-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .category-item img {
+      width: 100%;
+      transition: transform 0.3s ease;
+      border-radius: 12px;
+    }
+    .category-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s ease;
+    }
+    .category-item:hover img { transform: scale(1.05); }
+    .category-item:hover .category-overlay { opacity: 1; }
+    .category-overlay h4 {
+      color: #fff;
+      background-color: rgba(30,30,30,0.7);
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg site-navbar navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="site-hero" style="background-image: url('images/Homepage_IMG.png');">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-10 text-center">
+          <h1><strong>Kirsten Grohman</strong></h1>
+          <p>Portfolio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="category-section">
+    <div class="container">
+      <div class="category-heading">
+        <h2>Explore My <strong>Design Categories</strong></h2>
+        <p>Click a category to explore projects.</p>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="category-item">
+            <a href="project1.html">
+              <img src="images/graphicD_Icon.png" alt="Full Portfolio Image">
+              <div class="category-overlay"><h4>Full Graphic Portfolio</h4></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="category-item">
+            <a href="portfolio.html">
+              <img src="images/poster_Icon.png" alt="Poster Image">
+              <div class="category-overlay"><h4>Poster Designs</h4></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="category-item">
+            <a href="MixedMedia.html">
+              <img src="images/mixedmedia_Icon.png" alt="Mixed Media Icon">
+              <div class="category-overlay"><h4>Mixed Media</h4></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="category-item">
+            <a href="portfolio.html">
+              <img src="images/stickers_Icon.png" alt="Stickers Icon">
+              <div class="category-overlay"><h4>Stickers</h4></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 bg-dark text-light">
+    <p>&copy; 2025 KitDesigns. All rights reserved.</p>
+  </footer>
+</body>
+</html>

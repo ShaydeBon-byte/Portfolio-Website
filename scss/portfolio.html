@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>KitDesigns - Portfolio</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  .portfolio-item { position: relative; overflow: hidden; }
+  .portfolio-item img { transition: transform 0.3s ease; width: 100%; }
+  .portfolio-item:hover img { transform: scale(1.05); }
+  .portfolio-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6); color: #fff; opacity: 0;
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+  .portfolio-item:hover .portfolio-overlay { opacity: 1; }
+  .portfolio-title { font-size: 1.3rem; font-weight: bold; text-align: center; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="site-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>My <strong>Portfolio</strong></h2>
+        <p>Hover over a project to see its name. Click to learn more.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a href="project1.html" class="portfolio-link">
+              <img src="images/project1.jpg" alt="Project 1">
+              <div class="portfolio-overlay"><div class="portfolio-title">Project One</div></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a href="project2.html" class="portfolio-link">
+              <img src="images/project2.jpg" alt="Project 2">
+              <div class="portfolio-overlay"><div class="portfolio-title">Project Two</div></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a href="project3.html" class="portfolio-link">
+              <img src="images/project3.jpg" alt="Project 3">
+              <div class="portfolio-overlay"><div class="portfolio-title">Project Three</div></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 bg-light">
+    <p>&copy; 2025 KitDesigns. All rights reserved.</p>
+  </footer>
+</body>
+</html>

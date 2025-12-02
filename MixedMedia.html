@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>KitDesigns - Portfolio</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { background-color: #1f1f1f; color: #eaeaea; }
+    .navbar, footer { background-color: #2a2a2a !important; }
+    .navbar .nav-link { color: #eaeaea !important; }
+    .navbar .nav-link:hover { color: #ffffff !important; }
+    .portfolio-item { position: relative; overflow: hidden; border-radius: 12px; }
+    .portfolio-item img { width: 100%; transition: transform 0.3s ease; }
+    .portfolio-overlay {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6); color: #fff; opacity: 0;
+      display: flex; align-items: center; justify-content: center;
+      transition: opacity 0.3s ease;
+    }
+    .portfolio-item:hover img { transform: scale(1.05); }
+    .portfolio-item:hover .portfolio-overlay { opacity: 1; }
+    .portfolio-title { font-size: 1.2rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg site-navbar navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="site-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>My <strong>Portfolio</strong></h2>
+        <p>Hover over a project to see its title, click to learn more.</p>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a href="Collage.html">
+              <img src="images/collage_Icon.png" alt="Collage Icon">
+              <div class="portfolio-overlay"><div class="portfolio-title">Collage</div></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a href="PosterDesigns.html">
+              <img src="images/3D_Icon.png" alt="3D Icon">
+              <div class="portfolio-overlay"><div class="portfolio-title">3D Works</div></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a href="MixedMedia.html">
+              <img src="images/printmaking_Icon.png" alt="Print Making Icon">
+              <div class="portfolio-overlay"><div class="portfolio-title">Print Making</div></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a href="project1.html">
+              <img src="images/digital_Icon.png" alt="Digital Illustrations Icon">
+              <div class="portfolio-overlay"><div class="portfolio-title">Digital Illustrations</div></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+        <a href="portfolio.html" class="btn btn-secondary">Back to Portfolio</a>
+      </div>
+  </section>
+
+  <footer class="text-center py-4 bg-dark text-light">
+    <p>&copy; 2025 KitDesigns. All rights reserved.</p>
+  </footer>
+</body>
+</html>
